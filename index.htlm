@@ -1,1 +1,21 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Intelligence Group</title>
+</head>
+
+<body>
+
+    <h1>Flavor Intelligence Group</h1>
+    <h2>From Molecules to Perception</h2>
+
+    <p>
+        The Flavor Intelligence Group integrates flavor chemistry,
+        analytical science, sensory science, and artificial intelligence
+        to understand and design the next generation of food flavors.
+    </p>
+
+</body>
+</html>
