@@ -13,7 +13,7 @@
   --color-text:       #1a1a1a;
   --color-text-muted: #5c5c5c;
   --color-border:     #e2e0dc;
-  --color-accent:     #6b6b6b;   /* placeholder — swap for your brand color */
+  --color-accent:     #1a1a1a;   /* neutral black for now — swap in brand red later */
   --color-accent-contrast: #ffffff; /* text color on top of --color-accent */
 
   /* ---- Type ---- */
@@ -203,15 +203,51 @@ img { max-width: 100%; display: block; }
    Hero
    --------------------------------------------------------- */
 .hero {
-  padding: var(--space-6) 0 var(--space-5);
+  padding: var(--space-5) 0;
+  overflow: hidden;
 }
 
-.hero-inner { max-width: var(--content-narrow); }
+.hero-inner {
+  max-width: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.hero-visual {
+  flex: 0 0 38%;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.hero-content {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: var(--content-narrow);
+}
 
 .eyebrow {
   font-size: 0.85rem;
   color: var(--color-text-muted);
   margin-bottom: var(--space-2);
+}
+
+.hero-tagline {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin: -0.4em 0 var(--space-2);
 }
 
 .hero-lede {
@@ -224,6 +260,22 @@ img { max-width: 100%; display: block; }
   gap: var(--space-2);
   margin-top: var(--space-3);
   flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .hero-visual {
+    flex-basis: auto;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    align-self: flex-start;
+  }
+  .hero-content {
+    max-width: none;
+  }
 }
 
 /* ---------------------------------------------------------
@@ -356,13 +408,6 @@ img { max-width: 100%; display: block; }
 .card p { margin-bottom: 0; }
 
 /* ---------------------------------------------------------
-   Callout
-   --------------------------------------------------------- */
-.callout-inner {
-  max-width: var(--content-narrow);
-}
-
-/* ---------------------------------------------------------
    Footer
    --------------------------------------------------------- */
 .site-footer {
@@ -398,6 +443,64 @@ img { max-width: 100%; display: block; }
 }
 
 .site-footer a { color: var(--color-text); }
+
+/* ---------------------------------------------------------
+   People page
+   --------------------------------------------------------- */
+.people-visual {
+  flex: 0 0 240px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.people-visual img {
+  object-position: center;
+}
+
+.people-role {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin: -0.4em 0 var(--space-3);
+}
+
+.degree-table {
+  width: 100%;
+  max-width: 760px;
+  border-collapse: collapse;
+  margin-top: var(--space-3);
+  font-size: 0.95rem;
+}
+
+.degree-table th,
+.degree-table td {
+  text-align: left;
+  padding: 0.7em 1em 0.7em 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.degree-table th {
+  font-weight: 500;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .people-visual {
+    flex-basis: auto;
+    width: 160px;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .degree-table {
+    font-size: 0.85rem;
+  }
+  .degree-table th,
+  .degree-table td {
+    padding: 0.5em 0.5em 0.5em 0;
+  }
+}
 
 /* ---------------------------------------------------------
    Responsive
