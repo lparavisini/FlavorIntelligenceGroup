@@ -758,3 +758,23 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+/* ---------------------------------------------------------
+   Mobile fixes
+   --------------------------------------------------------- */
+@media (max-width: 700px) {
+  .wrap {
+    max-width: 100%;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .site-nav ul {
+    gap: 0.5rem 1.25rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
