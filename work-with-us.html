@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work With Us — Flavor Intelligence Group</title>
+<meta name="description" content="Ways to work with the Flavor Intelligence Group at the University of Nebraska-Lincoln: research partnerships, services, instrumentation partnerships, and joining our team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark-full">Flavor Intelligence Group</span>
+      <span class="wordmark-short">FIG</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="work-with-us.html" aria-current="page">Work With Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ BANNER ============ -->
+  <section class="hero hero-stack hero-picture">
+    <div class="wrap hero-inner">
+      <h1>Work With Us</h1>
+      <p class="hero-lede">Be part of what's next for flavor.</p>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 1 — RESEARCH COLLABORATIONS AND PARTNERSHIPS ============ -->
+  <section class="section same-height" id="research">
+    <div class="wrap">
+      <h2>Research Collaborations and Partnerships</h2>
+      <p>The Flavor Intelligence Group (FIG) collaborates with academic and industry partners to address fundamental and applied challenges in flavor science and accelerate innovation.</p>
+      <p>We welcome partnerships through:</p>
+      <ul class="list-disc">
+        <li><strong>Sponsored research.</strong> Collaborative projects addressing specific scientific and technological challenges.</li>
+        <li><strong>Collaborative grant proposals.</strong> Joint applications to advance fundamental and applied research in flavor science.</li>
+        <li><strong>Student sponsorship.</strong> Opportunities to support graduate research and train the next generation of flavor scientists.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 2 — SERVICES -->
+<section class="section same-height" id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p>
+      FIG provides scientific expertise and analytical capabilities
+      to support research, product development, and innovation.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Flavor Analysis</h3>
+        <ul class="list-disc">
+          <li>Off-flavors and quality</li>
+          <li>Flavor stability and shelf-life</li>
+          <li>Ingredient replacement</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>Technical Consulting</h3>
+        <ul class="list-disc">
+          <li>Flavor design and creation</li>
+          <li>Experimental design for analytical and sensory workflows</li>
+          <li>Data infrastructure and pipeline development</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Our Capabilities</h3>
+    <p>
+      Our analytical platform includes Liquid Chromatography
+      coupled with high resolution MS (Q/Tof) and Gas
+      Chromatography coupled with high resolution MS (Q/Tof),
+      and state-of-the-art sampling for flavor including
+      Vacuum In Tube extraction and Dynamic Headspace. 
+    </p>
+    <p> Our sensory platform is in development.</p>
+
+  </div>
+</section>
+
+  <!-- ============ SECTION 3 — INSTRUMENTATION AND TECHNOLOGY PARTNERSHIPS ============ -->
+  <section class="section same-height" id="instrumentation">
+    <div class="wrap">
+      <h2>Instrumentation and Technology Partnerships</h2>
+      <p>We are seeking partnerships with analytical instrument manufacturers and technology developers to advance the next generation of tools for flavor analysis.</p>
+      <p>Opportunities for collaboration include:</p>
+      <ul class="list-disc">
+        <li><strong>Method development.</strong> Co-developing and evaluating analytical methods, automated workflows, and data processing solutions.</li>
+        <li><strong>Technology innovation.</strong> Advancing high-throughput analytical capabilities to generate data at the scale required for AI-powered flavor discovery.</li>
+        <li><strong>Scientific visibility.</strong> Disseminating collaborative research through publications, conferences, and academic workshops.</li>
+        <li><strong>Interdisciplinary collaboration.</strong> Connecting technology developers with research challenges and expertise across academia and industry.</li>
+        <li><strong>Education and training.</strong> Supporting hands-on training for the next generation of scientists and instrument users.</li>
+      </ul>
+    </div>
+  </section>
+
+
+<!-- CONTACT SECTION -->
+<section class="section contact-section">
+  <div class="wrap">
+    <h2>Interested in collaborating?</h2>
+    <p>
+      Contact FIG to discuss research partnerships,
+      analytical services, or technology development.
+    </p>
+
+    <div class="contact-email">
+      <span id="fig-email">lparavisini2@unl.edu</span>
+      <button type="button" class="copy-email-btn"
+        onclick="copyEmail(this)">
+        Copy email
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyEmail(button) {
+  const email = document.getElementById("fig-email").textContent;
+  navigator.clipboard.writeText(email).then(() => {
+    button.textContent = "Copied!";
+    setTimeout(() => {
+      button.textContent = "Copy email";
+    }, 2000);
+  }).catch(() => {
+    button.textContent = "Select email to copy";
+  });
+}
+</script>
+
+
+  <!-- ============ SECTION 4 — JOIN OUR TEAM ============ -->
+  <section class="section same-height" id="join">
+    <div class="wrap">
+      <h2>Join Our Team</h2>
+      <p>Prospective graduate students can apply <a href="https://foodscience.unl.edu/application-admission-master-and-doctoral-degree">here</a>. Application deadline for Fall 2027 is December 1st, 2026. </p>
+      <p>The selection is highly competitive, so students are invited to prepare compelling applications demonstrating their skills and interests in flavor research. Backgrounds in chemistry, analytical chemistry and computer science are encouraged. Please indicate your interest in FIG in your letter, as our program is new and not yet in the selection.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-title">&copy; 2026 Flavor Intelligence Group, Department of Food Science and Technology, University of Nebraska-Lincoln</p>
+    <p class="footer-title">Contact: <a href="mailto:lparavisini2@unl.edu">lparavisini2@unl.edu</a></p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var sections = document.querySelectorAll(".same-height");
+  if (!sections.length) return;
+
+  function equalizeHeights() {
+    sections.forEach(function (s) { s.style.minHeight = "auto"; });
+
+    var tallest = 0;
+    sections.forEach(function (s) {
+      if (s.offsetHeight > tallest) tallest = s.offsetHeight;
+    });
+
+    sections.forEach(function (s) { s.style.minHeight = tallest + "px"; });
+  }
+
+  equalizeHeights();
+  window.addEventListener("resize", equalizeHeights);
+  window.addEventListener("load", equalizeHeights);
+});
+</script>
+
+</body>
+</html>
