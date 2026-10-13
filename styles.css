@@ -778,3 +778,70 @@ button:focus-visible {
     font-size: 2rem;
   }
 }
+/* Floating contact box */
+.float-contact {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 50;
+  width: 300px;
+  padding: 1.25rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.float-contact h2 {
+  font-size: 1.1rem;
+  margin: 0 1.5rem 0.5rem 0;
+}
+
+.float-contact p {
+  max-width: none;
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.float-contact-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.float-contact-copy {
+  padding: 0.4em 0.9em;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-alt);
+  font: inherit;
+  cursor: pointer;
+}
+
+.float-contact-copy:hover { background: var(--color-border); }
+
+.float-contact-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  border: 0;
+  background: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .float-contact {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    width: auto;
+    padding: 1rem;
+  }
+  .float-contact p { display: none; }
+}

@@ -117,24 +117,17 @@
   </section>
 
 
-<!-- CONTACT SECTION -->
-<section class="section contact-section">
-  <div class="wrap">
-    <h2>Interested in collaborating?</h2>
-    <p>
-      Contact FIG to discuss research partnerships,
-      analytical services, or technology development.
-    </p>
-
-    <div class="contact-email">
-      <span id="fig-email">lparavisini2@unl.edu</span>
-      <button type="button" class="copy-email-btn"
-        onclick="copyEmail(this)">
-        Copy email
-      </button>
-    </div>
+<!-- FLOATING CONTACT BOX -->
+<aside class="float-contact" id="float-contact" aria-label="Contact FIG">
+  <button type="button" class="float-contact-close" aria-label="Close"
+    onclick="document.getElementById('float-contact').style.display='none'">&times;</button>
+  <h2>Interested in collaborating?</h2>
+  <p>Contact FIG to discuss research partnerships, analytical services, or technology development.</p>
+  <div class="float-contact-email">
+    <span id="fig-email">lparavisini2@unl.edu</span>
+    <button type="button" class="float-contact-copy" onclick="copyEmail(this)">Copy email</button>
   </div>
-</section>
+</aside>
 
 <script>
 function copyEmail(button) {
