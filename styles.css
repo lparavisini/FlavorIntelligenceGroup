@@ -845,3 +845,38 @@ button:focus-visible {
   }
   .float-contact p { display: none; }
 }
+
+@media (max-width: 700px) {
+  .news-carousel {
+    flex-wrap: wrap;
+    gap: 1rem 0.5rem;
+  }
+
+  .news-viewport {
+    flex: 1 1 100%;
+    order: 1;
+    min-width: 0;
+  }
+
+  .news-arrow {
+    order: 2;
+    width: 40px;
+    height: 40px;
+  }
+
+  .news-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .news-item img {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .news-item p {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+}
